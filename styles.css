@@ -1,9 +1,7 @@
 .wrapper {
-    margin-right: auto;
-    margin-left:  auto;
-    min-width: 960px;
-    min-height: 1024px;
-    padding-right: 10px;
-    padding-left:  10px;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  align-content: space-between;
     border: solid 1px;
   }
