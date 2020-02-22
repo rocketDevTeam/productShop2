@@ -36,7 +36,7 @@ const customAlert = (message, sound, isLogin) => {
         mess.className = 'message'
         wrapper.append(mess)
         const duration = sound.duration * 1000;
-        
+
         setTimeout(() => {
             mess.style.display = 'none';
             if (!isLogin) {
@@ -58,9 +58,7 @@ const strangerAlert = (message, sound) => {
         const duration = sound.duration * 1000;
         setTimeout(() => {
             mess.style.display = 'none';
-            if (!isLogin) {
-                form.style.display = 'flex';
-            }
+            form.style.display = 'flex';
         }, duration);
     }
 }
