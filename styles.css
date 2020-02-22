@@ -1,14 +1,17 @@
-.form-wrapper {
-  display: flex;
-    flex-direction: column;
-}
-
 .wrapper {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
   align-content: center;
+  justify-content: center;
   text-align: center;
     border: solid 1px;
   }
  
- 
+  .form-wrapper {
+    display: flex;
+      flex-direction: column;
+  }
+  .form-wrapper input {
+    text-align: center;
+  }
