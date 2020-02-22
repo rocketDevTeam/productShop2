@@ -5,3 +5,8 @@
   align-content: space-between;
     border: solid 1px;
   }
+  .form {
+    display: flex;
+    display: inline-block;
+    display: table-column;
+  }
