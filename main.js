@@ -10,5 +10,6 @@ function onSubmit() {
         form.style.display = 'none'
     } else {
         alert("Who are you, stranger?");
+        form.reset();
     }
 }
