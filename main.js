@@ -7,9 +7,11 @@ function onSubmit() {
     const surname = formData.get('surname');
     if (name === validName && surname === validSurname) {
         alert("Welcome, honey (◍•ᴗ•◍)");
-        form.style.display = 'none'
+        form.style.display = 'none';
+        
     } else {
         alert("Who are you, stranger?");
         form.reset();
     }
+    
 }

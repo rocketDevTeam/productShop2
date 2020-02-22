@@ -14,4 +14,18 @@
   }
   .form-wrapper input {
     text-align: center;
+    height: 36px;
+    margin: 5px;
+    outline: none;
+    border-radius: 5px 20px 5px;
+    border-color: yellowgreen;
+  }
+  .form-wrapper button {
+    margin: 5px;
+    height: 36px;
+    text-transform: uppercase;
+   font-weight: bold;
+   outline: none;
+   border-radius: 5px 20px 5px;
+   background-color: yellowgreen;
   }
