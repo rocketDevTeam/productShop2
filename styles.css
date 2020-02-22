@@ -1,12 +1,15 @@
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
 .wrapper {
   display: flex;
-  flex-wrap: wrap;
   min-height: 100vh;
-  align-content: space-between;
+  align-content: center;
+  text-align: center;
     border: solid 1px;
   }
-  .form {
-    display: flex;
-    display: inline-block;
-    display: table-column;
-  }
+ 
+ 
