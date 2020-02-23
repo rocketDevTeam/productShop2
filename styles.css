@@ -42,7 +42,7 @@
   }
 
   .cake {
-    transform: translate(54px, 10px);
+    transform: translate(0px, 10px);
     position: relative;
     width: 300px;
   }

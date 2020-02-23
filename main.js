@@ -52,7 +52,8 @@ const customAlert = async (message, sound, isLogin) => {
 
 const showCake = () => {
     debugger;
-    let shift = -387;
+    let innerSize = -300;
+    const fixSize = (window.innerWidth - 300)/2;
     wrapper.style.backgroundColor = 'black';
     happyBirthday.play();
     const cakeWrapper = document.createElement('div')
@@ -60,11 +61,11 @@ const showCake = () => {
     const cake = document.createElement('div')
     const cakeImg = document.createElement('img')
     cakeWrapper.className = 'cake-wrapper'
-    cakeWrapper.style.left = `${shift}px`;
+    cakeWrapper.style.left = `${innerSize}px`;
     cake.className = 'cake';
     flame.className = 'flame';
 
-    cakeImg.src = 'media/cake.png'
+    cakeImg.src = 'media/cake2.png'
     cake.appendChild(cakeImg);
 
     cakeWrapper.appendChild(flame);
@@ -73,12 +74,12 @@ const showCake = () => {
     wrapper.appendChild(cakeWrapper);
 
    const id = setInterval( () => {
-        shift++
-        if(shift == 0){
+    innerSize++
+        if(innerSize >= fixSize){
             clearInterval(id);
         }
-        cakeWrapper.style.left = `${shift}px`;
-    }, 45);
+        cakeWrapper.style.left = `${innerSize}px`;
+    }, 35);
 
 }
 
