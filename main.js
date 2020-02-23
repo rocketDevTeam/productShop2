@@ -64,10 +64,10 @@ const showCake = () => {
     cakeWrapper.style.left = `${innerSize}px`;
     cake.className = 'cake';
     flame.className = 'flame';
-
+    flame.id = 'flame-id';
     cakeImg.src = 'media/cake2.png'
     cake.appendChild(cakeImg);
-
+    
     cakeWrapper.appendChild(flame);
     cakeWrapper.appendChild(cake);
 
@@ -81,6 +81,11 @@ const showCake = () => {
         cakeWrapper.style.left = `${innerSize}px`;
     }, 35);
 
+}
+
+const blowHandler = () => {
+    const flame = document.getElementById('flame-id');
+    flame.style.display ='none';
 }
 
 const strangerAlert = (message, sound) => {
