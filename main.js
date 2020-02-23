@@ -54,6 +54,36 @@ const showCake = () => {
     debugger;
     wrapper.style.backgroundColor = 'black';
     happyBirthday.play();
+    const cake = document.createElement('div')
+    const candle = document.createElement('div')
+    const flame = document.createElement('div')
+    const shadows = document.createElement('div')
+    const top = document.createElement('div')
+    const bottom = document.createElement('div')
+    const wick = document.createElement('div')
+
+    const cakeImg = document.createElement('img')
+
+    cake.className = 'cake';
+    candle.className = 'candle';
+    flame.className = 'flame';
+    shadows.className = 'shadows'
+    top.className = 'top'
+    bottom.className = 'bottom'
+    wick.className = 'wick'
+
+    cakeImg.src = 'media/cake.png'
+
+    flame.appendChild(shadows);
+    flame.appendChild(top);
+    flame.appendChild(bottom);
+
+    candle.appendChild(flame);
+    candle.appendChild(wick);
+
+    cake.appendChild(candle);
+    cake.appendChild(cakeImg);
+    wrapper.appendChild(cake);
 }
 
 const strangerAlert = (message, sound) => {
