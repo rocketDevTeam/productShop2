@@ -19,7 +19,7 @@ const onSubmit = () => {
 
     } else if (name === secretName && surname === secretSurname) {
         thugLive.play();
-        customAlert('He loves YOU!!!', thugLive)
+        bossAlert(thugLive)
         form.reset();
     } else {
         whoAreYou.play();
@@ -100,4 +100,17 @@ const strangerAlert = (message, sound) => {
             form.style.display = 'flex';
         }, duration);
     }
+}
+const bossAlert = ( sound) => {
+        const form = document.querySelector('form');
+        form.style.display = 'none';
+        const img = document.createElement('img');
+        img.src = 'media/boss.png'
+        img.className = 'stranger-img';
+        wrapper.append(img)
+        const duration = sound.duration * 1000;
+        setTimeout(() => {
+            img.style.display = 'none';
+            form.style.display = 'flex';
+        }, duration);
 }
