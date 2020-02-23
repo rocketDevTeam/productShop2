@@ -37,17 +37,20 @@
     left: calc(50% - 150px);
   }
 
+  .cake-wrapper {
+    position: absolute;
+  }
+
   .cake {
+    transform: translate(54px, 10px);
     position: relative;
+    width: 300px;
   }
 
-  .cake img {
-    position: relative;
-    z-index: 1000;
-    width: 400px;
+ .cake img {
+    width: 100%;
+    height: auto;
   }
-
- 
 
 
 
