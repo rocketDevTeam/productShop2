@@ -43,7 +43,7 @@ const customAlert = async (message, sound, isLogin) => {
             mess.style.display = 'none';
             if (!isLogin) {
                 form.style.display = 'flex';
-            } else{
+            } else {
                 showCake();
             }
         }, duration);
@@ -52,13 +52,15 @@ const customAlert = async (message, sound, isLogin) => {
 
 const showCake = () => {
     debugger;
+    let shift = -396;
     wrapper.style.backgroundColor = 'black';
     happyBirthday.play();
     const cakeWrapper = document.createElement('div')
     const flame = document.createElement('div')
     const cake = document.createElement('div')
     const cakeImg = document.createElement('img')
-
+    cakeWrapper.className = 'cake-wrapper'
+    cakeWrapper.style.left = `${shift}px`;
     cake.className = 'cake';
     flame.className = 'flame';
 
@@ -69,6 +71,15 @@ const showCake = () => {
     cakeWrapper.appendChild(cake);
 
     wrapper.appendChild(cakeWrapper);
+
+   const id = setInterval( () => {
+        shift++
+        if(shift == 0){
+            clearInterval(id);
+        }
+        cakeWrapper.style.left = `${shift}px`;
+    }, 45);
+
 }
 
 const strangerAlert = (message, sound) => {
@@ -86,16 +97,16 @@ const strangerAlert = (message, sound) => {
         }, duration);
     }
 }
-const bossAlert = ( sound) => {
-        const form = document.querySelector('form');
-        form.style.display = 'none';
-        const img = document.createElement('img');
-        img.src = 'media/boss.png'
-        img.className = 'stranger-img';
-        wrapper.append(img)
-        const duration = sound.duration * 1000;
-        setTimeout(() => {
-            img.style.display = 'none';
-            form.style.display = 'flex';
-        }, duration);
+const bossAlert = (sound) => {
+    const form = document.querySelector('form');
+    form.style.display = 'none';
+    const img = document.createElement('img');
+    img.src = 'media/boss.png'
+    img.className = 'stranger-img';
+    wrapper.append(img)
+    const duration = sound.duration * 1000;
+    setTimeout(() => {
+        img.style.display = 'none';
+        form.style.display = 'flex';
+    }, duration);
 }
