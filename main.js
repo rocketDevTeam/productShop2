@@ -51,13 +51,13 @@ const strangerAlert = (message, sound) => {
         const form = document.querySelector('form');
         form.style.display = 'none';
         const wrapper = document.getElementById('wrapper-main');
-        const mess = document.createElement('span');
-        mess.innerText = message;
-        mess.className = 'message';
-        wrapper.append(mess)
+        const img = document.createElement('img');
+        img.src = 'media/suspect.png'
+        img.className = 'stranger-img';
+        wrapper.append(img)
         const duration = sound.duration * 1000;
         setTimeout(() => {
-            mess.style.display = 'none';
+            img.style.display = 'none';
             form.style.display = 'flex';
         }, duration);
     }

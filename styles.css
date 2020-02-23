@@ -29,7 +29,10 @@
    border-radius: 5px 20px 5px;
    background-color: yellowgreen;
   }
-  .message {
-    color: gray;
-    font: 400 13.3333px Arial;
+  .stranger-img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    left: calc(50% - 150px);
   }
