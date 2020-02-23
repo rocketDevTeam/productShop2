@@ -52,7 +52,7 @@ const customAlert = async (message, sound, isLogin) => {
 
 const showCake = () => {
     debugger;
-    let shift = -396;
+    let shift = -387;
     wrapper.style.backgroundColor = 'black';
     happyBirthday.play();
     const cakeWrapper = document.createElement('div')
